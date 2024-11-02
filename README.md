@@ -19,7 +19,7 @@ This project is designed to efficiently handle and transform Spotify's top 50 so
 
 ### 3. **Automated Data Truncation**
    - **Stored Procedures and Task Scheduling**: Created a stored procedure to automatically truncate the `album_data`, `artist_data`, and `song_data` tables before new data ingestion. The stored procedure is invoked by a Snowflake task, which is scheduled to execute a few minutes before the `spotify-data-extract` Lambda function runs.
-   - **Scheduling Tips**: Ensure the Snowflake's task to be scheduled before triggering CloudWatch event's schedule for `spotify-data-extract` to maintain data consistency and avoid duplicate entries.
+   - **Scheduling Tips**: Ensure the Snowflake's task to be scheduled before triggering CloudWatch event's schedule for `spotify-data-extract` lambda function to maintain data consistency and avoid duplicate entries.
 
 Refer to the following files for more details on the code:
 - [`Spotify_Snwflk_Transform@lambda.py`](./Spotify_Snwflk_Transform@lambda.py) for recent file processing code.
