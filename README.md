@@ -1,4 +1,4 @@
-# Spotify Data Engineering with Snowflake
+# Spotify API Data Engineering with Snowflake
 
 This project leverages Snowflake as the data warehouse solution for the loading and processing stages, while maintaining the core architecture from the previous project [`spotify-data-analysis-etl-python-aws`](https://github.com/harshaallam/spotify-data-analysis-etl-python-aws). 
 
